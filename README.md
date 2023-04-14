@@ -1,5 +1,6 @@
 "# Data-organization" 
-##Data-organization
+
+## Data-organization
  In this File I used Python and Google collab to seperate CSV formatted Data 
   Open This file In google collab and you should be able to 
   Run the code in blocks so you can see every step of the way
@@ -17,7 +18,7 @@ import numpy as np
   
 ```
 
-#Next step is to make sure that your data is the right directory, for use.
+# Next step is to make sure that your data is the right directory, for use.
 
 
 ![Screenshot 2023-04-14 112250](https://user-images.githubusercontent.com/70156560/232087014-ee873bcb-3747-402a-9bae-e126f1de5a59.png)
@@ -28,14 +29,14 @@ After That Use the Pandas Libraries to read in the CSV file as a DataFrame objec
 df = pd.read_csv('/content/1m-PDDS(2023-04-12).csv')
 ```
 
-#Then Sort the Data Frames Based on the Variables
+# Then Sort the Data Frames Based on the Variables
 
 ```
 
 df = df.sort_values(by=['Location', 'Site', 'Plot','Subplot'])
 ```
 
-#You Can use the print function to view your how your data is organized thus far
+# You Can use the print function to view your how your data is organized thus far
 
 ```
 print(df_sorted)
@@ -48,7 +49,7 @@ SHould look somthing Like this (Based on the variables you used)
 
 
 
-#Great! Now We will begin grouping the data
+# Great! Now We will begin grouping the data
 ```
 grouped_df.size()
 ```
@@ -60,7 +61,7 @@ grouped_df.size()
 
 It will look like this showing you how it is grouped and how many times it repeats
 
-#Next is Grouping and Download in groups of "Location, Site, Plot" Variables
+# Next is Grouping and Download in groups of "Location, Site, Plot" Variables
 
 ```
 grouped = df_sorted.groupby(['Location', 'Site', 'Plot'])
