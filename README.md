@@ -45,7 +45,7 @@ print(df_sorted)
 print(df_sorted.head())
 ```
 
-SHould look somthing Like this (Based on the variables you used)
+Should look somthing Like this (Based on the variables you used)
 
 ![Screenshot 2023-04-14 112942](https://user-images.githubusercontent.com/70156560/232088151-26b04cfd-fc3b-4001-8f95-76f4b5edfe1f.png)
 
