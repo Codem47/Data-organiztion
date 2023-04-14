@@ -10,6 +10,8 @@
   Make sure that your data is in the correct Directory, and That is it in CSV format
   As this code Is designed for CSV
   
+## Getting Into Data Orginzation
+  
   First Step is to import the necessary Modules 
   
   ```python
@@ -29,14 +31,14 @@ After That Use the Pandas Libraries to read in the CSV file as a DataFrame objec
 df = pd.read_csv('/content/1m-PDDS(2023-04-12).csv')
 ```
 
-# Then Sort the Data Frames Based on the Variables
+Then Sort the Data Frames Based on the Variables
 
 ```
 
 df = df.sort_values(by=['Location', 'Site', 'Plot','Subplot'])
 ```
 
-# You Can use the print function to view your how your data is organized thus far
+You Can use the print function to view your how your data is organized thus far
 
 ```
 print(df_sorted)
@@ -49,7 +51,7 @@ SHould look somthing Like this (Based on the variables you used)
 
 
 
-# Great! Now We will begin grouping the data
+Great! Now We will begin grouping the data
 ```
 grouped_df.size()
 ```
@@ -61,7 +63,7 @@ grouped_df.size()
 
 It will look like this showing you how it is grouped and how many times it repeats
 
-# Next is Grouping and Download in groups of "Location, Site, Plot" Variables
+Next is Grouping and Download in groups of "Location, Site, Plot" Variables
 
 ```
 grouped = df_sorted.groupby(['Location', 'Site', 'Plot'])
